@@ -53,6 +53,7 @@ SO THAT I can plan a trip accordingly
 - https://github.com/necolas/normalize.css
 - https://courses.bootcampspot.com/ (Challenge description)
 - https://www.youtube.com/@code
+- https://www.udemy.com/course/the-web-developer-bootcamp
 
 ## License
 
