@@ -14,37 +14,13 @@
     <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1 class="text-center my-3">Weather Dashboard</h1>
-      <div class="row">
-        <div class="col-md-6 offset-md-3">
-          <form id="search-form" class="mb-3">
-            <div class="input-group">
-              <input
-                type="text"
-                id="city-input"
-                class="form-control"
-                placeholder="Search for a city"
-                aria-label="City"
-                aria-describedby="button-addon2"
-              />
-              <div class="input-group-append">
-                <button
-                  class="btn btn-outline-secondary"
-                  type="submit"
-                  id="button-addon2"
-                >
-                  Search
-                </button>
-              </div>
-            </div>
-          </form>
-          <div id="current-weather" class="mb-4"></div>
-          <div id="forecast" class="row"></div>
-        </div>
+    <section class="section">
+      <div class="container">
+        <h1 class="title has-text-centered">Weather Forecast</h1>
+        <form id="searchForm">
+          <div class="field has-addons">
       </div>
-    </div>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </section>    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
