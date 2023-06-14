@@ -44,14 +44,15 @@ SO THAT I can plan a trip accordingly
 ## Credits
 
 - https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
-- https://getbootstrap.com/
-- https://jquery.com/
+- https://bulma.io/
+- https://openweathermap.org/api
+- https://openweathermap.org/weather-conditions
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch
 - https://www.w3schools.com/
 - http://meyerweb.com/eric/tools/css/reset/
 - https://github.com/necolas/normalize.css
 - https://courses.bootcampspot.com/ (Challenge description)
 - https://www.youtube.com/@code
-- https://www.youtube.com/@Fireship
 
 ## License
 
