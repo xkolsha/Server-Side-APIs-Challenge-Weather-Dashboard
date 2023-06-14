@@ -42,3 +42,24 @@ async function fetchWeather(city) {
     console.error("Error:", error);
   }
 }
+
+// Function for the form submission
+document
+  .querySelector("#searchForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const city = document.querySelector("#cityInput").value;
+
+    // Save search history
+    const searchHistory = localStorage.getItem("searchHistory") || "[]";
+    const historyArray = JSON.parse(searchHistory);
+    historyArray.push(city);
+    localStorage.setItem("searchHistory", JSON.stringify(historyArray));
+
+    // Display search history
+    displaySearchHistory();
+
+    // Fetch weather data for the city
+    fetchWeather(city);
+  });
