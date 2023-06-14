@@ -1,4 +1,6 @@
-const API_KEY = "{c8f235379537ae30e3dbf9ffbf148ad8}";
+// API key for OpenWeather
+const apiKey = "c8f235379537ae30e3dbf9ffbf148ad8";
+
 // Function to fetch weather data
 async function fetchWeather(city) {
   const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
@@ -63,3 +65,30 @@ document
     // Fetch weather data for the city
     fetchWeather(city);
   });
+
+// Function to display search history
+function displaySearchHistory() {
+  const searchHistory = localStorage.getItem("searchHistory") || "[]";
+  const historyArray = JSON.parse(searchHistory);
+  let historyHTML = "";
+
+  for (let i = 0; i < historyArray.length; i++) {
+    historyHTML += `<li class="list-item">${historyArray[i]}</li>`;
+  }
+
+  document.querySelector("#searchHistory").innerHTML = historyHTML;
+
+  // Attach event listener to search history items
+  document.querySelectorAll("#searchHistory li").forEach(function (item) {
+    item.addEventListener("click", function () {
+      const city = this.textContent;
+      document.querySelector("#cityInput").value = city;
+      fetchWeather(city);
+    });
+  });
+}
+
+// Display search history on page load
+window.onload = function () {
+  displaySearchHistory();
+};
