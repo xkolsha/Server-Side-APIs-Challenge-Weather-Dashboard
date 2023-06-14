@@ -39,7 +39,7 @@ SO THAT I can plan a trip accordingly
 
 ## Mock Up
 
-![Mock up of the website](./assets/images/Screenshot%202023-05-30%20151412.png)
+![Mock up of the website](./assets/images/Web%20capture_13-6-2023_211247_127.0.0.1.jpeg)
 
 ## Credits
 
